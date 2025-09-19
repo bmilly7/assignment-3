@@ -103,3 +103,28 @@ def run_undo_redo():
 
 if __name__ == "__main__":
     run_undo_redo()
+
+
+
+
+'''
+Why is a stack the right choice for undo/redo?
+Why is a queue better suited for the help desk?
+How do your implementations differ from Python’s built-in lists?
+Be sure to review Resource #3: When to Use a Stack or a Queue to help in answering these questions!
+
+
+A stack is the right choice for undo/redo when you the most recent action needs to be handled first. For example for undo/redo
+you are usually undoing or redoing the last action that you completed. This would make a stack useful because it follows the last in first
+out principle. 
+
+The queue is better suited for the help desk because in this situation fairness matters. The customers are treated first come first handled.
+This meaning that the first in first out princilple is needed. 
+
+From my understanding, using a linked list version of a stack or queue can be a lot faster than using a built in python list or array. 
+This is because of how it handles memory. When removing items from a built in python list, the other elements in the list will need to be shifted.
+Python list are generally fast for end operations and also random access since elements can be accessed by index
+
+
+
+'''
